@@ -27,7 +27,22 @@ except ValueError:
     print("Você deve informar um número inteiro!")
 
 
+hora = int(input("Qual é a hora atual? "))
 
+if hora >= 0 and hora <= 11:
+    print("Bom dia!")
+elif hora >= 12 and hora <= 17:
+    print("Boa tarde!")
+elif hora > 24:
+    print("Horário Inexistente")
+else: 
+    print("Boa Noite!")
 
+nome = str(input("Qual é o seu nome? "))
 
-
+if len(nome) <= 4:
+    print("Seu nome é curto!")
+elif len(nome) >= 5 and len(nome) <= 6:
+    print("Seu nome é normal!")
+else:
+    print("Seu nome é muito grande!")
